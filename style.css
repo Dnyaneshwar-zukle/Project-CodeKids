@@ -1,0 +1,170 @@
+body{
+    background-color:#E935F8;
+    font-family: Poppins;
+}
+.sticky_part {
+    display: flex;
+    width: 60%;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+}
+.wdth {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+}
+.StyleAfterScroll{
+    left: 0px;
+    right: 0px;
+    grid-template-columns: 1fr auto 1fr;
+    border: 1px solid rgb(235, 238, 241);
+    border-radius: 72px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 150ms ease 0s, -webkit-transform 150ms ease 0s, -webkit-backdrop-filter 150ms ease 0s;
+    backdrop-filter: blur(10px);
+    padding: 0px 20px;
+    margin-bottom: 12px;
+}
+.logo_part{
+    width: 60%;
+    margin: 0 auto;
+}
+.logo {
+    height: 96px;
+    width: 96px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.logo_2{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.logo_2 img{
+    width: 100%;
+}
+.logo img{
+    width: 100%;
+}
+.logo_title {
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: Poppins;
+    text-align: center;
+}
+button.main_logo {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    height: 42px;
+    width: 42px;
+    border-radius: 100%;
+    position: relative;
+    right: 0px;
+    left: 85%;
+}
+.sticky_logo.wdth {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* second part */
+
+.subSocial {
+    display: flex;
+    width: 50%;
+    margin:30px auto;
+    border: 1px solid rgb(235, 238, 241);
+    border-radius: 72px;
+    cursor: pointer;
+    height: 60px;
+}
+.subSocial:hover{
+    background-color:#fff;
+    transition: background-color 150ms ease 0s, -webkit-transform 150ms ease 0s, -webkit-backdrop-filter 150ms ease 0s;
+}
+.subSocial:hover h4{
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    color: #E935F8;
+}
+#social .subSocial:hover svg path{
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    fill: #E935F8;
+}
+.dummy {
+    width: 20%;
+}
+.txtPart {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IconPart {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+}
+.txtPart h4{
+  color: #fff;
+  font-weight: 400;
+}
+
+.main_logo_2{
+    background-color: unset;
+    border: none;
+    margin: 0px 38px;
+}
+#social .main_logo_2 svg path{
+  fill: #fff;
+}
+
+/* last part */
+.subSocial-1 {
+    display: flex;
+    justify-content: center;
+}
+.subSocial-1 h3{
+    color: #fff;
+}
+
+/* sticky */
+.header-sticky{
+    position: relative;
+}
+.sticky_part_sticky{
+    position: fixed;
+}
+.logo_hide{
+    display: none;
+}
+h4.header_head {
+    display: none;
+}
+
+/* responcive */
+@media (max-width: 767px){
+    button.main_logo {
+        left: 60%;
+}
+}
+
+@media (max-width: 1024px){
+    .subSocial {
+        width: 70%;
+    }
+    .sticky_part {
+        width: 80%;
+    }
+}
+
